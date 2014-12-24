@@ -1,0 +1,14 @@
+{
+  "name": "nodeInfo",
+  "version": "1.0.0",
+  "description": "Uses node to get various information like stocks, weather etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rachit Sengupta <srachit@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "twilio": "^1.10.0"
+  }
+}
