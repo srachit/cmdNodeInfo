@@ -30,7 +30,10 @@ function getWeather(city){
                 {
                     printError(error);
                 }
-            })
+            });
+            response.on('error', function(error){
+
+            });
         }
         //If failure to recieve response
         else

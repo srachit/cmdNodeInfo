@@ -1,8 +1,15 @@
 var http = require('http');
-
+var colors = require('colors');
 function printStock(symbol, value, change)
 {
-    console.log(symbol + " has value " + value + " with change of " + change);
+    var changeSymbol = change.slice(0,1);
+    if(changeSymbol === "+")
+    {
+        console.log("\n" + symbol + " has value " + value.blue.bold + " with change of " + change.green.bold + "\n");
+    }
+    else{
+        console.log("\n" + symbol + " has value " + value.blue.bold + " with change of " + change.red.bold + "\n");
+    }
 }
 
 function printError(error)
