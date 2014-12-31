@@ -10,7 +10,7 @@ function printError(error){
 
 function getWeather(city){
     var request = http.get("http://api.openweathermap.org/data/2.5/find?q="+city+"&units=metric", function(response){
-        //If response recieved succesfully
+        //If response received successfully
         if(response.statusCode == 200)
         {
             var body = ""; //To store the information received from website
@@ -35,7 +35,7 @@ function getWeather(city){
 
             });
         }
-        //If failure to recieve response
+        //If failure to receive response
         else
         {
             printError({message: "There was an error getting information for "+ city +". ("+ http.STATUS_CODES[response.statusCode] + ")"});
