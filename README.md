@@ -13,8 +13,13 @@ node index.js stock goog msft
 ```
 
 ```
-node index.js twTrends //defaults to 3 trend tweets
-node index.js twTrends 10 //prints 10 trends tweets
+node index.js trendTweet //defaults to 3 trend tweets
+node index.js trendTweet 10 //prints 10 trends tweets
+```
+
+```
+node index.js trends //defaults to 3 trends
+node index.js trends 10 //prints 10 trends
 ```
 
 <h3>Getting Twitter To Work</h3>
